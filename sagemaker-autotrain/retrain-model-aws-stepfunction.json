@@ -17,9 +17,9 @@
           "epochs": "20",
           "learning-rate": "0.01",
           "sagemaker_region": "\"us-east-1\"",
-          "sagemaker_job_name": "\"sms-spam-classifier-mxnet-2021-04-05-18-50-21-492\"",
-          "sagemaker_program": "\"sms_spam_classifier_mxnet_script.py\"",
-          "sagemaker_submit_directory": "\"s3://sagemaker-hw3-bucket/sms-spam-classifier/code/sms-spam-classifier-mxnet-2021-04-05-18-50-21-492/source/sourcedir.tar.gz\""
+          "sagemaker_job_name": ,
+          "sagemaker_program": ,
+          "sagemaker_submit_directory": 
         },
         "AlgorithmSpecification": {
           "TrainingImage": "520713654638.dkr.ecr.us-east-1.amazonaws.com/sagemaker-mxnet:1.1-cpu-py2",
@@ -38,7 +38,7 @@
             "DataSource": {
               "S3DataSource": {
                 "S3DataType": "S3Prefix",
-                "S3Uri": "s3://sagemaker-hw3-bucket/sms-spam-classifier/train/",
+                "S3Uri": ,
                 "S3DataDistributionType": "FullyReplicated"
               }
             }
@@ -95,7 +95,7 @@
     "Create Model": {
       "Parameters": {
         "PrimaryContainer": {
-          "Image": "520713654638.dkr.ecr.us-east-1.amazonaws.com/sagemaker-mxnet:1.1-cpu-py2",
+          "Image": "",
           "Environment": {},
           "ModelDataUrl.$": "$.ModelArtifacts.S3ModelArtifacts"
         },
